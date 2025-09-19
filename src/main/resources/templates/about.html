@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+<head>
+    <title>About Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* Custom styles */
+        .section-bg {
+            background-color: #f9f9f9;
+        }
+        .team-member {
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content" class="border">
+        <!-- About Section -->
+        <section class="bg-blue-600 text-white py-20">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">About Contact Manager</h2>
+                <p class="text-lg mb-8 animate__animated animate__fadeInUp">
+                    Welcome to the About page of Contact Manager! Our mission is to provide a seamless and secure experience for managing your contacts.
+                </p>
+                <p class="text-gray-200 mb-4 animate__animated animate__fadeInUp">
+                    With an easy-to-use interface and top-notch security measures, we ensure that your data is safe and accessible whenever you need it. Our team is dedicated to continuously improving the platform to serve you better.
+                </p>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-20 section-bg">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12 animate__animated animate__fadeInUp">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card team-member">
+                        <i class="fas fa-user-circle text-blue-600 text-6xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                        <p class="text-gray-600">CEO & Founder</p>
+                        <p class="text-gray-500 mt-2">John is passionate about technology and innovation. He leads the vision of Contact Manager.</p>
+                    </div>
+                    <div class="card team-member">
+                        <i class="fas fa-user-circle text-blue-600 text-6xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Piyush Vishwakarma</h3>
+                        <p class="text-gray-600">Developer</p>
+                        <p class="text-gray-500 mt-2">Piyush is passionate about creating efficient and user-friendly applications. His dedication to quality and performance drives the development of Contact Manager.</p>
+                        <p class="text-gray-500 mt-2"><strong>Email:</strong> piyushvishwakarma242@gmail.com</p>
+                    </div>
+                    <div class="card team-member">
+                        <i class="fas fa-user-circle text-blue-600 text-6xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+                        <p class="text-gray-600">CTO</p>
+                        <p class="text-gray-500 mt-2">Jane drives the technical advancements and ensures our platform is secure and user-friendly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class=" text-center">
+            <p>&copy; 2025 Contact Manager. All rights reserved.</p>
+        </footer>
+
+        <script>
+            console.log("About page");
+        </script>
+    </div>
+</body>
+</html>
