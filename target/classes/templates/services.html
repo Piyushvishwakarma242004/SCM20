@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{})}">
+<head>
+    <title>Services Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f0f4f8; /* Light background for contrast */
+        }
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 400px; /* Set height for service cards */
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div id="content" class="min-h-screen py-20 flex flex-col justify-center">
+        <!-- Header Section -->
+        <section class="bg-blue-800 text-white text-center py-16">
+            <h1 class="text-5xl font-bold mb-4">Welcome to the Services Page</h1>
+            <h2 class="text-3xl mb-4">Services Offered by SCM</h2>
+            <p class="text-lg">Explore our extensive range of services designed to meet your contact management needs.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-10">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Contact Management</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, consequatur? Our contact management service helps you organize your contacts effectively. We provide a user-friendly interface to ensure that managing your contacts is seamless and efficient.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Secure Data Storage</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, consequatur? We prioritize the security of your data with advanced encryption and regular backups to prevent data loss and unauthorized access.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">User-Friendly Interface</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, consequatur? Our platform offers an intuitive interface for seamless navigation, ensuring a smooth experience for all users.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Customizable Features</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, consequatur? Tailor the platform to fit your unique requirements, making it easy to add or modify features based on your preferences.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">Analytics & Reporting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, consequatur? Gain insights into your contacts with our analytics tools that provide comprehensive reports and trends to help you make informed decisions.</p>
+                    </div>
+                    <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">24/7 Customer Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, consequatur? Our support team is available around the clock to assist you with any inquiries or issues, ensuring you receive prompt assistance whenever needed.</p>
+                    </div>
+                </div>
+            </div>
+            <footer class="mt-10 text-center">
+                <p>&copy; 2025 Contact Manager. All rights reserved.</p>
+            </footer>
+        </section>
+        
+    </div>
+
+    <script>
+        console.log("Services page");
+    </script>
+</body>
+</html>
